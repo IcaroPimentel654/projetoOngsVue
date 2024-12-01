@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site para divulgar organizações não governamentais (ONGs)">
+    <title>Doe e Transforme</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <div class="logo">
+            <h1>Doe e Transforme, ajude alguem hoje!</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="infos">Sobre</a></li>
+                <li><a href="ongs">ONGs</a></li>
+                <li><a href="contato">Divulgue sua ONG</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Seção Sobre -->
+    <section id="infos" class="section">
+        <h2>Sobre as ONGs</h2>
+        <p>As organizações não governamentais (ONGs) são entidades sem fins lucrativos que atuam em diversas áreas,
+        como saúde, educação, meio ambiente e direitos humanos. Conheça algumas delas abaixo e descubra como você 
+        pode ajudar.</p>
+    </section>
+
+    <!-- Seção de ONGs -->
+    <section id="ongs" class="section">
+        <h2>Algumas ONGs que apoiamos</h2>
+        <div class="org-list">
+            <div class="org-item">
+                <h3>ONG 1 - Apoio à Educação</h3>
+                <p>Essa ONG oferece apoio educacional para crianças em situação de vulnerabilidade social.</p>
+            </div>
+            <div class="org-item">
+                <h3>ONG 2 - Proteção Animal</h3>
+                <p>O foco dessa ONG é promover a proteção dos direitos dos animais e combater maus-tratos.</p>
+            </div>
+            <div class="org-item">
+                <h3>ONG 3 - Meio Ambiente</h3>
+                <p>Esta ONG luta pela preservação ambiental e promove ações para a sustentabilidade.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Contato -->
+    <section id="contato" class="section">
+        <h2>Entre em Contato conosco para divulgarmos seu projeto:</h2>
+        <form id="contactForm">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Mensagem:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+        <p id="responseMessage"></p>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2024 Doe e Transforme. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
