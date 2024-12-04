@@ -1,47 +1,39 @@
-<script setup>
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
-</script>
-
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
-
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-    </div>
-  </header>
-
-  <main>
-    <TheWelcome />
-  </main>
+  <div id="app">
+    <router-view />
+  </div>
 </template>
 
-<style scoped>
-header {
-  line-height: 1.5;
+<script>
+export default {
+  name: "App",
+};
+</script>
+
+<style>
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #2C3E50; 
+    color: #ECF0F1;
 }
 
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
+#app {
+  font-family: Arial, sans-serif;
 }
-
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
+.navbar {
+  background-color: #007BFF;
+  padding: 10px;
+  text-align: center;
+}
+.nav-link {
+  margin: 0 10px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+}
+.nav-link:hover {
+  text-decoration: underline;
 }
 </style>
